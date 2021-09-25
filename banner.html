@@ -15,16 +15,15 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       grid-gap: 5px;
-
-      padding: 50px;
-      max-width: 400px;
-      max-height: 600px;
+      padding: 30px;
+      max-width: 600px;
+      height: 600px;
+      margin: auto;
     }
 
     .container > div {
       cursor: pointer;
-      height: 100px;
-
+      height: 150px;
       background: cornflowerblue;
       display: flex;
       flex-direction: column;
@@ -71,7 +70,7 @@
     #cmg-logo {
       height: 100%;
       width: 100%;
-      padding: 15px;
+      padding: 5px;
       object-fit: scale-down;
     }
 
@@ -81,9 +80,10 @@
       object-fit: scale-down;
       padding: 5px;
     }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 400px) {
       .container {
         display: inline-block;
+        margin-left: 25px;
       }
     }
   </style>
