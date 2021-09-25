@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive banner</title>
+  </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 5px;
+
+      padding: 50px;
+      max-width: 400px;
+      max-height: 600px;
+    }
+
+    .container > div {
+      cursor: pointer;
+      height: 100px;
+
+      background: cornflowerblue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .item-header {
+      grid-column: 1/3;
+    }
+
+    #html-logo {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      padding: 5px;
+    }
+
+    #css-logo {
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+      object-fit: contain;
+    }
+
+    #js-logo {
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+      object-fit: contain;
+    }
+
+    #react-logo {
+      height: 100%;
+      width: 100%;
+    }
+
+    #node-logo {
+      height: 100%;
+      width: 100%;
+      padding: 5px;
+    }
+
+    #cmg-logo {
+      height: 100%;
+      width: 100%;
+      padding: 15px;
+      object-fit: scale-down;
+    }
+
+    #mongo-logo {
+      height: 100%;
+      width: 100%;
+      object-fit: scale-down;
+      padding: 5px;
+    }
+    @media only screen and (max-width: 600px) {
+      .container {
+        display: inline-block;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="container">
+      <div class="item-header">
+        <img
+          src="https://www.convergent-usa.com/_nuxt/img/logo.d5d3c6a.png"
+          id="cmg-logo"
+        />
+      </div>
+      <div class="item-first">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+          id="html-logo"
+        />
+      </div>
+      <div class="item-second">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+          id="css-logo"
+        />
+      </div>
+      <div class="item-third">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
+          id="js-logo"
+        />
+      </div>
+      <div class="item-fourth">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+          id="react-logo"
+        />
+      </div>
+      <div class="item-fifth">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
+          id="node-logo"
+        />
+      </div>
+      <div class="item-sixth">
+        <img
+          src="https://gocode.colorado.gov/wp-content/uploads/2020/11/MongoDB-sm-logo.gif"
+          id="mongo-logo"
+        />
+      </div>
+    </div>
+  </body>
+</html>
